@@ -1,0 +1,20 @@
+.HistoryTable{
+    th{
+        @apply bg-gray-divider first:rounded-tl-lg last:rounded-tr-lg  px-6 py-4 text-start
+    }
+
+    td{
+        @apply bg-gray-700 first:pl-6 py-4 border-b-4 border-gray-elements text-sm last:pb-[20px] 
+    }
+
+}
+
+.beforeRed{
+    @apply before:bg-red-default
+}   
+.beforeGreen{
+    @apply before:bg-green-light
+}
+.beforeOrange{
+    @apply before:bg-orange-500
+}

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  line-height: 160%;
+  @apply bg-gray-background text-gray-title font-[Roboto]
+}
+
+a{
+  cursor: pointer;  
+}
+
+.robot{
+  font-family: 'Roboto Mono', monospace;
+  line-height: 160%;
+  @apply font-bold text-[10rem] 
+}
+
+.active{
+  @apply text-green-dark  
+}
+
+button.disabled{
+  opacity: 0.5;
+}
+
+.removeArrow { 
+
+  &::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
+
+}
