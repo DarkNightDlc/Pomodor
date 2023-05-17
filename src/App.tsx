@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import { BrowserRouter } from 'react-router-dom'
 import { Router } from './Router'
+import { BrowserRouter } from 'react-router-dom'
+import { CycleContextProvider } from './context/CyclesContext'
 import './styles/GlobalStyles.scss'
 
 function App() {
 
   return (
     <BrowserRouter>
-      <Router/>
+      <CycleContextProvider>
+        <Router/>
+      </CycleContextProvider>
     </BrowserRouter>
   )
 }
